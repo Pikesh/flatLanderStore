@@ -1,0 +1,74 @@
+ [{
+    "name":"Diamond",
+    "price":"40.95",
+    "description":"Diamond is a white gem that every one adores",
+    "specification":"24 Carats",
+    "reviews":[{
+      "stars":"4.5",
+      "review":"This gem is amazing! Suited well to my ears",
+      "contact":"shiwangi432@gmail.com"
+    },
+    {
+      "stars":"3.0",
+      "review":"This gem is bad! Did not suit well",
+      "contact":"shiwangi432@gmail.com"
+    }],
+    "canAdd":true,
+    "outOfStock":false,
+    "images" : [
+      {
+        "full":"/images/diamond2.png",
+        "thumb":""
+      }
+    ]
+  },
+  {
+    "name":"Ruby",
+    "price":"52.95",
+    "description":"Ruby is a pink gem that every one adores",
+    "specification":"24 Carats",
+    "reviews":[{
+      "stars":"4.5",
+      "review":"This gem is amazing! Suited well to my ears",
+      "contact":"shiwangi432@gmail.com"
+    },
+    {
+      "stars":"3.0",
+      "review":"This gem is bad! Did not suit well",
+      "contact":"shiwangi432@gmail.com"
+    }],
+    "canAdd":true,
+    "outOfStock":false,
+    "images" : [
+      {
+        "full":"/images/ruby2.png",
+        "thumb":""
+      }
+    ]
+  },
+  {
+    "name":"Sapphire",
+    "price":"78.95",
+    "description":"Sapphire is a blue gem that every one adores",
+    "specification":"24 Carats",
+    "reviews":[{
+      "stars":"4.5",
+      "review":"This gem is amazing! Suited well to my ears",
+      "contact":"shiwangi432@gmail.com"
+    },
+    {
+      "stars":"3.0",
+      "review":"This gem is bad! Did not suit well",
+      "contact":"shiwangi432@gmail.com"
+    }],
+    "canAdd":true,
+    "outOfStock":false,
+    "images" : [
+      {
+        "full":"/images/Sapphire2.png",
+        "thumb":""
+      }
+    ]
+  }
+
+]

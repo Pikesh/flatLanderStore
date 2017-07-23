@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<title>FlatLander Store</title>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+  <link rel="stylesheet" type="text/css" href="css/custom.css"></link>
+  <link rel="icon" type="image/png" href = "sapphire2.png"></link>
+  <script type="text/javascript" src="src/angular.min.js" > </script>
+  <script type="text/javascript" src="src/app.js"> </script>
+  <script type="text/javascript" src="src/review.js"> </script>
+  <script type="text/javascript" src="services/getLocalData.js"> </script>
+</head>
+<body>
+  <div class="container">
+    <ul class = "list-group" ng-controller= "StoreController as store">
+      <li class = "list-group-item" ng-repeat ="product in store.products" ng-hide="product.outOfStock">
+        <title-product></title-product><br><br>
+        <img ng-src={{product.images[0].full}} class="imageCenter" alt={{product.name}}></img><br>
+        <section>
+          <pane></pane>
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<blockquote class="contentFont"><p><b class="starColor">{{reviewCtrl.rView.stars}} stars</b> {{reviewCtrl.rView.review}}</p>
+  <cite>-by {{reviewCtrl.rView.contact}}</cite>
+</blockquote>
+<select class = "form-control" ng-model="reviewCtrl.rView.stars" ng-options ="stars for stars in [5,4,3,2,1]" required></select><br>
+<textarea class="form-control" ng-model="reviewCtrl.rView.review" placeholder="Write Your Review" required></textarea><br>
+<input type = "email" class="form-control" ng-model="reviewCtrl.rView.contact" placeholder="Enter Phone/Email" required/></input><br>
+<input type="submit" value="Submit"></input>

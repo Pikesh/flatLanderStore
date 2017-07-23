@@ -1,0 +1,27 @@
+  <ul class = "nav nav-pills">
+    <li ng-class = "{active:pane.isActive(1)}"><a href ng-click="pane.tabSelect(1)">Description</a></li>
+    <li ng-class = "{active:pane.isActive(2)}"><a href ng-click="pane.tabSelect(2)">Specifications</a></li>
+    <li ng-class = "{active:pane.isActive(3)}"><a href ng-click="pane.tabSelect(3)">Review</a></li>
+  </ul>
+  <div class="panel panel-primary" style ="width:500px">
+    <div ng-show="pane.isActive(1)">
+      <blockquote>{{product.description}}</blockquote>
+    </div>
+    <div ng-show="pane.isActive(2)">
+      <blockquote>{{product.specification}}</blockquote>
+    </div>
+    <div ng-show="pane.isActive(3)">
+      <div ng-repeat = "review in product.reviews">
+        <blockquote class="contentFont"><p><b class="starColor">{{review.stars}} stars</b> {{review.review}}</p>
+          <footer>by {{review.contact}}</footer>
+        </blockquote>
+      </div>
+      <div class = "reviewFormLayout" ng-controller="ReviewController as reviewCtrl">
+        <h5><b>Sumbit Your Review</b></h5>
+        <form name = "reviewForm" class = "form-group" ng-submit ="reviewForm.$valid && store.addReview(reviewCtrl.rView, $parent.$index); reviewForm.$valid && reviewCtrl.clearFields()" novalidate>
+          <review-form></review-form>
+        </form>
+      </div>
+    </div>
+  </div>
+  <button ng-show="product.canAdd" class="addToCartMargin">Add to Cart</button><br><br>
